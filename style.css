@@ -1,0 +1,43 @@
+* {  
+   
+    text-align: center;
+  }
+  
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-image: url(./image/background.jpg);
+    background-size: cover;
+
+  }
+
+  h1{
+    margin-top: 60px;
+    height: 50px;
+  }
+
+  #forme-du-jeu{
+    margin: 50px auto;
+    width: 600px;
+    
+  }
+
+  #forme-du-jeu input{
+    border: 0cm white;
+  }
+    
+ #pairs{
+    width: 45px;
+   
+ }
+
+  button {
+    background-color: rgb(255, 174, 0);
+     color: black;
+     font-size: 1rem;
+     font-weight: bold;
+     border-radius: 10px;
+     border: 1px solid white;
+     height: 40px;
+     cursor: pointer;
+  }
