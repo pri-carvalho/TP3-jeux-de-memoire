@@ -14,30 +14,91 @@
   h1{
     margin-top: 60px;
     height: 50px;
+    font-size: 2rem;
   }
 
   #forme-du-jeu{
     margin: 50px auto;
     width: 600px;
+   
     
   }
 
+  #name {
+    width: 165px;
+  }
+  
+
   #forme-du-jeu input{
     border: 0cm white;
+    height: 25px;
+
   }
     
+  #forme-du-jeu label{
+    font-size: 2rem;
+   
+  }
+
+ #name{
+  width: 300px;
+ }
  #pairs{
-    width: 45px;
+    width: 50px;
    
  }
 
   button {
     background-color: rgb(255, 174, 0);
      color: black;
-     font-size: 1rem;
+     font-size: 1.5rem;
      font-weight: bold;
      border-radius: 10px;
      border: 1px solid white;
      height: 40px;
      cursor: pointer;
+     margin-top: 20px;
   }
+
+  #tableDeJeux {
+    justify-content: center;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 600px;   
+  }
+
+  .carteMemoire {
+    width: calc(10% - 10px);
+    height: 33%;
+    margin: 5px;
+    transform-style: preserve-3d;  
+    transition: 0.3s;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .carteMemoire:active{
+    transform: scale(0.97);
+  }
+  
+  .carteMemoire.flip{
+    transform: rotateY(180deg);
+  }
+  
+  .carteFront,  .carteDos{
+    background: rgb(255, 174, 0);
+    width: 100%;
+    height:100%;
+    position: absolute;
+    padding: 5px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;   
+  }
+  
+  .carteFront {
+    transform: rotateY(180deg);
+  }
+  
