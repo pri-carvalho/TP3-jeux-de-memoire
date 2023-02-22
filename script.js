@@ -35,7 +35,7 @@ gameForm.addEventListener("submit", (e) => {
   if (validarNumero(pairs.value) && validarNome(name.value)) {     
     form.remove();
     creerCartes(CartesPourJouer); 
-    tempsRestant();    
+    tempsRestant(name);    
   } else {
     errorMessage.textContent = 'Veuillez remplir tous les champs. '+ message;   
   }  
@@ -218,7 +218,7 @@ function supprimerCartesCorrespondantes(premiereCarteAux, deuxiemeCarteAux) {
  * If the table is empty, the game is over, and the timer is still running, stop the timer and display
  * 'You won!'
  */
-function tempsRestant() {
+function tempsRestant(name) {
   let remainingTime = 5 * 60; 
 
   const updateTimer = () => {
@@ -235,10 +235,10 @@ function tempsRestant() {
     remainingTime--;  
     if (remainingTime < 0 && finDuJeu != true) {
       clearInterval(timer);
-      minuterie.textContent = 'Vous avez perdu!';
+      minuterie.textContent = name.value + ', Vous avez perdu!';
     }
     if (remainingTime > 0 && finDuJeu == true) {
-      minuterie.textContent = 'Vous avez gagné!';
+      minuterie.textContent = name.value + ', Vous avez gagné!';
     }
   };  
   const timer = setInterval(updateTimer, 1000); 
