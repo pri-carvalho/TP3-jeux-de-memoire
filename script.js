@@ -3,7 +3,9 @@
 /***************************************************************** */
 
 
-/* The above code is declaring variables and assigning values to them. */
+
+/* The above code is creating a form that allows the user to input the number of pairs they want to
+play with and their name. The code is also validating the input. */
 const form = document.getElementById('form');
 const errorMessage = document.querySelector('#errorMessage');
 const minuterie = document.getElementById('minuterie');

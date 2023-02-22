@@ -1,5 +1,4 @@
 * {  
-   
     text-align: center;
   }
   
@@ -8,7 +7,6 @@
     font-weight: bold;
     background-image: url(./image/background.jpg);
     background-size: cover;
-
   }
 
   h1{
@@ -20,40 +18,44 @@
   #forme-du-jeu{
     margin: 50px auto;
     width: 600px;
-   
-    
+  }
+
+  .formulaire{
+    margin: 15px;
+    width: 700px;
   }
 
   #forme-du-jeu input{
     border: 0cm white;
     height: 25px;
-
   }
     
   #forme-du-jeu label{
     font-size: 2rem;
-   
   }
 
  #name{
   width: 300px;
+  height: 30px;
+  font-size: 1.5rem;
  }
 
  #pairs{
     width: 50px;
-   
+    height: 30px;
+    font-size: 1.5rem;
  }
 
   button {
     background-color: rgb(255, 174, 0);
-     color: black;
-     font-size: 1.5rem;
-     font-weight: bold;
-     border-radius: 10px;
-     border: 1px solid white;
-     height: 40px;
-     cursor: pointer;
-     margin-top: 20px;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid white;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 20px;
   }
 
   #tableDeJeux {
@@ -61,7 +63,7 @@
     margin: 50px auto;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 1400px;
     height: 600px;   
   }
 
@@ -97,9 +99,11 @@
   .carteFront {
     transform: rotateY(180deg);
   }
+
   #errorMessage {
     color: red;
     font-weight: bold;
+    font-size: 2rem;
   }
 
   #minuterie {
