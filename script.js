@@ -235,10 +235,11 @@ function tempsRestant(name) {
     remainingTime--;  
     if (remainingTime < 0 && finDuJeu != true) {
       clearInterval(timer);
-      minuterie.textContent = name.value + ', Vous avez perdu!';
+      minuterie.textContent = name.value + ', vous avez perdu!';
+      desactiverCartes();
     }
     if (remainingTime > 0 && finDuJeu == true) {
-      minuterie.textContent = name.value + ', Vous avez gagné!';
+      minuterie.textContent = name.value + ', vous avez gagné!';
     }
   };  
   const timer = setInterval(updateTimer, 1000); 
