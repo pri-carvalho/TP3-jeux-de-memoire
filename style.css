@@ -24,11 +24,6 @@
     
   }
 
-  #name {
-    width: 165px;
-  }
-  
-
   #forme-du-jeu input{
     border: 0cm white;
     height: 25px;
@@ -43,6 +38,7 @@
  #name{
   width: 300px;
  }
+
  #pairs{
     width: 50px;
    
@@ -100,5 +96,15 @@
   
   .carteFront {
     transform: rotateY(180deg);
+  }
+  #errorMessage {
+    color: red;
+    font-weight: bold;
+  }
+
+  #minuterie {
+    font-size: 36px;
+    color: #333;
+    font-weight: bold;
   }
   

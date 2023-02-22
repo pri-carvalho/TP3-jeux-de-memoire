@@ -7,25 +7,33 @@
     <title>TP3-Priscila Carvalho</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
-    <header>
-        <h1>Jeux de Mémoire - Priscila</h1> 
-      </header>
-      <main>
-    <form id="forme-du-jeu">   
-        <label for="pairs">Entrez le nombre de paires (2-10):</label>
-        <input type="number" id="pairs" min="2" max="10" required>    
-        <br><br>       
-        <label for="nom">Entrez votre nom:</label>
-        <input type="text" id="name" required>   
-        <br><br>      
-        <button type="submit">Commencer le jeux</button>
-       </form>
-      <div id="tableDeJeux"></div>
-      <script src="script.js"></script>
-    </main>   
-    <footer>
-    </footer>
+<body>    
+  <header>
+      <h1>Jeux de Mémoire</h1> 
+    </header>
+    <main>
+      <!-- A div that will be used to display the timer. -->
+      <div id="minuterie">          
+      </div>
+     <!-- Used to display the error message. -->
+      <p id="errorMessage"></p>
+      <div id="form">  
+     <!-- The form that will be used to get the number of pairs and the name of the player. -->
+        <form id="forme-du-jeu">   
+          <label for="pairs">Entrez le nombre de paires (2-10):</label>
+          <input type="number" id="pairs" name="pairs" step="1">    
+          <br><br>       
+          <label for="nom">Entrez votre nom:</label>
+          <input type="text" id="name" name="name">   
+          <br><br>      
+          <button type="submit">Commencer le jeux</button>
+        </form>
+      </div>
+<!-- Used to display the game table. -->
+    <div id="tableDeJeux"></div>
+    <script src="script.js"></script>
+  </main>   
+  <footer>
+  </footer>
 </body>
 </html>
